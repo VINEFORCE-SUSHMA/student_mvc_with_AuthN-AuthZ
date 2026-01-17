@@ -1,0 +1,44 @@
+﻿@using studentCRUD
+@using studentCRUD.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+
+@* @model studentCRUD.Pages.Students.IndexModel *@
+@{
+    ViewData["STUDENT"] = "Students List";
+}
+
+<h1>Students List</h1>
+
+<a class="btn btn-primary mb-3" asp-page="Create">Add New Student</a>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th> Name</th>
+            <th>ADDRESS</th>
+            
+            <th>Email</th>
+            <th>GENDER</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.Students)
+        {
+            <tr>
+                <td>@student.Id</td>
+                <td>@student.Name</td>
+                <td>@student.ADDRESS</td>
+                <td>@student.EMAIL</td>
+                <td>@student.GENDER</td>
+                <td>
+                    <a class="btn btn-sm btn-info" asp-page="Edit" asp-route-id="@student.Id">Edit</a>
+                    <a class="btn btn-sm btn-danger" asp-page="Delete" asp-route-id="@student.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

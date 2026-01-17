@@ -1,0 +1,9 @@
+﻿@using Microsoft.AspNetCore.Http
+
+@if (Context.Session.GetInt32("UserId") != null)
+{
+    <form asp-controller="Account" asp-action="Logout" method="post" style="display:inline">
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-link">Logout</button>
+    </form>
+}
