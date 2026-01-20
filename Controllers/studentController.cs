@@ -20,7 +20,7 @@ namespace studentCRUD.Controllers
             var students = _context.Students.ToList();
             return View(students);
         }
-        [AuthorizeUser(Role = "ADMIN")] // Only admin
+        [AuthorizeUser(Role = "ADMIN")] 
         public IActionResult Create()
         {
             return View();

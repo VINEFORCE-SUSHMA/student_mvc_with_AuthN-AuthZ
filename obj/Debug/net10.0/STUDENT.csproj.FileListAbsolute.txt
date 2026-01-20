@@ -282,3 +282,4 @@ C:\Users\Vineforce\Desktop\lab\studentCRUD\studentCRUD\obj\Debug\net10.0\refint\
 C:\Users\Vineforce\Desktop\lab\studentCRUD\studentCRUD\obj\Debug\net10.0\STUDENT.pdb
 C:\Users\Vineforce\Desktop\lab\studentCRUD\studentCRUD\obj\Debug\net10.0\STUDENT.genruntimeconfig.cache
 C:\Users\Vineforce\Desktop\lab\studentCRUD\studentCRUD\obj\Debug\net10.0\ref\STUDENT.dll
+C:\Users\Vineforce\Desktop\lab\studentCRUD\studentCRUD\obj\Debug\net10.0\STUDENT.sourcelink.json
